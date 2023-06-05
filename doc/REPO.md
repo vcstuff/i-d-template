@@ -70,7 +70,7 @@ $ git push
 Clone a copy of this repository into place:
 
 ```sh
-$ git clone https://github.com/martinthomson/i-d-template lib
+$ git clone https://github.com/vcstuff/i-d-template lib
 ```
 
 *Option:* If you prefer a stable version of this code, you can use `git submodule`
@@ -116,7 +116,7 @@ $ git remote add origin https://github.com/unicorn-wg/unicorn-protocol
 $ git add draft-*.{md,xml}
 $ git commit -m "Initial version blah blah blah"
 $ git push -u origin main
-$ git clone https://github.com/martinthomson/i-d-template lib
+$ git clone https://github.com/vcstuff/i-d-template lib
 $ make -f lib/setup.mk
 $ git push
 ```
