@@ -1,6 +1,6 @@
 ## Identify drafts, types and versions
 
-draft_patterns := draft draft-*[a-z] draft-*[-a-z][0-9] draft-*[a-z0-9][a-z0-9][0-9]
+draft_patterns := draft draft-*[a-z] draft-*[-a-z][0-9] draft-*[a-z0-9][a-z0-9][0-9] [a-z0-9][a-z0-9][0-9]
 extensions := xml org md
 drafts := $(sort $(basename $(wildcard $(foreach pattern,$(draft_patterns),$(foreach ext,$(extensions),$(pattern).$(ext))))))
 drafts += $(sort $(basename $(wildcard $(foreach n,d dd ddd dddd ddddd,$(foreach ext,$(extensions),rfc$(subst d,[0-9],$(n)).$(ext))))))
